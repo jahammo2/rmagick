@@ -41,6 +41,7 @@ module RMagick
 
     def initialize
       @stdout = $stdout.dup
+      puts "initialize ---------------"
       $stderr.puts "DEBUG: RMagick extconf is running!"
       @stdout.puts "2 ---------------"
       @stdout.puts "2 ---------------"
