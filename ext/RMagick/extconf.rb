@@ -191,7 +191,8 @@ module RMagick
       @stdout.puts "1 ---------------"
       @stdout.puts "1 ---------------"
       @stdout.puts "1 ---------------"
-      @stdout.puts "packages: #{packages}"
+      @stdout.puts "packages 1111111"
+      Logging.message "packages 22222222"
       return if packages.empty?
 
       msg = "\nDetected ImageMagick packages:\n"
