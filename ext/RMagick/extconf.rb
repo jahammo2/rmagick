@@ -163,6 +163,14 @@ module RMagick
 
     def determine_imagemagick_package
       packages = [installed_im7_packages, installed_im6_packages].flatten
+      puts "1 ---------------"
+      puts "1 ---------------"
+      puts "1 ---------------"
+      puts "1 ---------------"
+      puts "1 ---------------"
+      puts "1 ---------------"
+      puts "1 ---------------"
+      puts "packages: #{packages}"
       return if packages.empty?
 
       msg = "\nDetected ImageMagick packages:\n"
