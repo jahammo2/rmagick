@@ -41,6 +41,7 @@ module RMagick
 
     def initialize
       @stdout = $stdout.dup
+      $stderr.puts "DEBUG: RMagick extconf is running!"
       @stdout.puts "2 ---------------"
       @stdout.puts "2 ---------------"
       @stdout.puts "2 ---------------"
@@ -48,6 +49,7 @@ module RMagick
       @stdout.puts "2 ---------------"
       @stdout.puts "2 ---------------"
       @stdout.puts "2 ---------------"
+      @stdout.flush
 
       exit_failure("No longer support MSWIN environment.") if RUBY_PLATFORM.include?('mswin')
 
@@ -58,6 +60,9 @@ module RMagick
     end
 
     def setup_pkg_config_path
+      $stderr.puts "DEBUG: RMagick extconf is running 1!"
+      puts "DEBUG: This should print no matter what"
+
       return if RUBY_PLATFORM.include?('mingw')
 
       if find_executable('brew')
