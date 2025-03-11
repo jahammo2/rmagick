@@ -41,6 +41,13 @@ module RMagick
 
     def initialize
       @stdout = $stdout.dup
+      @stdout.puts "2 ---------------"
+      @stdout.puts "2 ---------------"
+      @stdout.puts "2 ---------------"
+      @stdout.puts "2 ---------------"
+      @stdout.puts "2 ---------------"
+      @stdout.puts "2 ---------------"
+      @stdout.puts "2 ---------------"
 
       exit_failure("No longer support MSWIN environment.") if RUBY_PLATFORM.include?('mswin')
 
@@ -171,6 +178,14 @@ module RMagick
       puts "1 ---------------"
       puts "1 ---------------"
       puts "packages: #{packages}"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "1 ---------------"
+      @stdout.puts "packages: #{packages}"
       return if packages.empty?
 
       msg = "\nDetected ImageMagick packages:\n"
